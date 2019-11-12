@@ -8,7 +8,6 @@ bot.on("ready" , function(){
 bot.on('message' , function(msg){
 if (msg.content === '!patata'){
     msg.reply('10 le G *mamène*');
-}
+    }
 });
-
- bot.login(process.env.TOKEN);
+bot.login(process.env.TOKEN);
