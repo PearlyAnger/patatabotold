@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const btc = require("btc-Value");
+const btc = require("btc-value");
 
 var patata;
 var bot = new Discord.Client();
@@ -26,13 +26,10 @@ bot.on('message' , function(msg){
 
 
 bot.on('message' , function(msg){
-if (msg.content === '!patata'){
 	
-    btc().then(value => {
-    msg.reply ( 0.001*value +' le G *mamène*');
-});
-    
-}
+	if (msg.content === '!patata'){
+		btc().then(value => {msg.reply ( 0.001*value +' le G *mamène*');});
+    }
 });
 
 bot.login(process.env.TOKEN);
