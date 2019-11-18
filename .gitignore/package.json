@@ -9,6 +9,7 @@
   "author": "Orhideon",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.5.1",
+    "btc-value": "2.1.1"
   }
 }
